@@ -11,8 +11,8 @@ const StudentsFollowUp = ({ students, user }) => {
       {students?.length === 0 && <div>No students!</div>}
       {students?.map((student, i) => {
         return (
-          <div style={{display: 'flex', alignItems: 'center'}}> <div
-          key={i}
+          <div key={i} style={{display: 'flex', alignItems: 'center'}}> <div
+          
           className='std-card'
           onClick={() =>
             router.push(`/follow-up/${student._id}?name=${student.firstName}`)
